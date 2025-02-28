@@ -10,8 +10,12 @@ Welcome to the autograder repository! This repository contains the guidelines on
 
 ## Generating autograded assignemnts
 
-To get started with the assignments and projects in this repository, follow these steps:
+Autograder on Gradescope can be created using any programming languages. Please find below some examples with Python
 
+<details>
+<summary>1. Python - using Jupyter Notebook</summary>
+<br>
+   
 1. **Clone the repository**:
    ```bash
    git clone 
@@ -22,13 +26,6 @@ To get started with the assignments and projects in this repository, follow thes
 3. **Activate conda environment**:
    ```bash
    conda activate autograder
-
-Autograder on Gradescope can be created using any programming languages. Please find below some examples with Python
-
-<details>
-<summary>1. Python - using Jupyter Notebook</summary>
-<br>
-
 4. **Create your assignment using the template in `source/template` folder**:
    - `template.ipynb` is a Jupyter notebook that instructor used to create the assignment
    - `data` folder is where you can save datasets that you want students to use in the assignment
