@@ -1,0 +1,15 @@
+# install with conda env create -f autograder_env.yaml
+
+name: autograder_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+  - pip
+  - pip:
+    - otter-grader
