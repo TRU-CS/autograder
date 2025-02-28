@@ -1,13 +1,21 @@
-# Autograder
+# Autograder with Gradescope
 
 Welcome to the autograder repository! This repository contains the guidelines on how to set up autograder on Gradescope with examples. 
+
+## Overview
+
+Gradescope provides a **language-agnostic platform** for running autograders on its infrastructure. By leveraging Docker containers, Gradescope allows users to set up any language, compiler, library, or other dependencies required for programming assignments. Users provide a setup script, an autograder script, and any supporting code needed, while Gradescope handles student submissions, executes the autograder at scale, and distributes the results to students and instructors.
+
+Gradescope programming assignments work with all programming languages and can be: 
+- graded manually
+- graded automatically with a code autograder
+- or use a combination of the two.
+Code similarity reports are also generated to flag potential plagiarism cases for instructors to review. Please check out [this video as a demo](https://www.youtube.com/watch?v=RxZxBeIp3sc) of its features. 
 
 ## Documentations:
 - [Otter-grader](https://otter-grader.readthedocs.io/en/latest/otter_assign/notebook_format.html). This is a library to generate autograder zip file from a jupyter notebook.
 - [Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/specs/). This is a platform to host the autograder and run autotest againsts students submissions
-
-## Contents
-
+  
 ## Generating autograded assignemnts
 
 Autograder on Gradescope can be created using any programming languages. Please find below some examples with Python
