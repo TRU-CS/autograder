@@ -38,3 +38,7 @@ Autograder on Gradescope can be created using any programming languages. Please 
 ## Resources:
 - [Otter-grader](https://otter-grader.readthedocs.io/en/latest/otter_assign/notebook_format.html). This is a library to generate autograder zip file from a jupyter notebook.
 - [Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/specs/). This is a platform to host the autograder and run autotest againsts students submissions
+
+## Training resouces:
+- [Training session 1 recording](https://onetru-my.sharepoint.com/:v:/g/personal/omendezromero_tru_ca/IQBo4W3eHjNiQIxnHqN-QGwYAdfmEepqzaYh925LYVWPz_M?e=YQj85X) by Alvar (Gradescope staff)
+- Training session 2 recording by Quan Nguyen (TRU) (TBD)
