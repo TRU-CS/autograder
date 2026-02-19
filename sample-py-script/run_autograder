@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Copy the `questions` folder from the submission to the source directory for testing
+cp -r /autograder/submission/* /autograder/source/*
+
+# Navigate to the source directory
+cd /autograder/source
+
+# Run the test suite
+python3 run_tests.py
