@@ -28,9 +28,9 @@ Please check out [this video as a demo](https://www.youtube.com/watch?v=RxZxBeIp
 
 Autograder on Gradescope can be created using any programming languages. Please find below some examples with Python:
 
-[1. Python - using Jupyter Notebook](https://github.com/TRU-CS/autograder/blob/main/docs/1-jupyter.md)
+[1. Python - using Jupyter Notebook](https://github.com/TRU-CS/autograder/tree/main/sample-jupyter)
 
-2: Python using python scripts
+2: [Python using python scripts](https://github.com/TRU-CS/autograder/tree/main/sample-py-script)
 
 3: C/C++
 
