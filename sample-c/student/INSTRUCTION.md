@@ -1,5 +1,14 @@
 # Banking System Assignment Instructions
 
+## Introduction and Purpose
+This assignment is a simplified banking application written in C. It simulates common account operations such as checking balances, depositing funds, withdrawing funds, and projecting growth with compound interest.
+
+The purpose of this exercise is to practice core C programming skills:
+- Writing and calling functions with clear contracts
+- Using pointers for pass-by-reference updates
+- Applying conditional logic for business rules (for example, insufficient funds)
+- Implementing recursive logic for financial calculations
+
 ## Overview
 In this assignment, you will implement a menu-driven C program that supports:
 
@@ -29,6 +38,10 @@ Use the standard compound interest behavior, where:
 - `r` = annual interest rate (decimal form)
 - `n` = number of compounds per year
 - `t` = number of years
+
+### Important Rate Convention
+- `calculateCompoundInterest(...)` expects `rate` in **decimal form** (for example, `0.05` for 5%).
+- If you build an interactive `main()` that asks users for a percent (for example, `5`), convert it to decimal before calling the function (for example, `rate /= 100`).
 
 ## Project Files
 | File | Purpose |
@@ -60,6 +73,8 @@ The autograder checks for:
 - Correct withdrawal behavior
 - Proper insufficient-funds handling
 - Correct compound interest calculation
+
+The grading scope assumes valid assignment inputs for the required operations. Handling invalid edge cases (for example, non-positive compounding frequency) is not part of the rubric unless explicitly announced by the instructor.
 
 ## Submission
 Submit **only**:
