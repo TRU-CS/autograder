@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Move to the submission directory
+cd /autograder/submission/
+
+# Copy necessary files into the autograder source
+cp banking_system.c /autograder/source/
+cp makefile /autograder/source/
+
+# Move to autograder source directory
+cd /autograder/source/
+
+# Clean and compile the student code, redirecting output to log.txt
+make clean > /autograder/results/log.txt 2>&1
+make >> /autograder/results/log.txt 2>&1
+
+# Ensure compiled files exist before proceeding
+if [ ! -f "banking_system.out" ] || [ ! -f "banking.so" ]; then
+    echo '{"tests": [], "visibility": "visible", "execution_time": "0.00", "score": 0, "output": "Compilation failed. Check log.txt."}' > /autograder/results/results.json
+    exit 1
+fi
+
+# Run the test script, capturing only JSON output
+/usr/bin/python3 run_tests.py > /dev/null 2>&1
+
+# Print JSON output (Gradescope expects this as the only output)
+# cat /autograder/results/results.json
