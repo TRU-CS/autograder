@@ -23,7 +23,7 @@ This folder is an instructor template for building a Jupyter assignment, generat
 From repo root:
 ```bash
 conda env create -f autograder_env.yaml
-conda activate adsc4720
+conda activate autograder_env
 ```
 
 ### 2) Build your assignment
@@ -36,7 +36,7 @@ Edit these files in this folder:
 ### 3) Generate student + autograder artifacts
 From repo root:
 ```bash
-conda run -n adsc4720 otter assign sample-jupyter/template.ipynb sample-jupyter/release
+conda run -n autograder_env otter assign sample-jupyter/template.ipynb sample-jupyter/release
 ```
 
 ### 4) Validate generated outputs
