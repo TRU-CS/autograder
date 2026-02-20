@@ -11,11 +11,11 @@ This folder is an instructor template for building a Jupyter assignment, generat
 - `img/`: images/assets to include for both students and autograder.
 
 ### Generated outputs (created by `otter assign`)
-- `student/template.ipynb`: student-facing notebook (solutions stripped).
-- `student/requirements.txt`, `student/data/`, `student/img/`: files distributed to students.
-- `autograder/template.ipynb`: notebook used inside autograder build.
-- `autograder/requirements.txt`, `autograder/data/`, `autograder/img/`, `autograder/otter_config.json`.
-- `autograder/*-autograder_*.zip`: upload this zip to Gradescope.
+- `release/student/template.ipynb`: student-facing notebook (solutions stripped).
+- `release/student/requirements.txt`, `release/student/data/`, `release/student/img/`: files distributed to students.
+- `release/autograder/template.ipynb`: notebook used inside autograder build.
+- `release/autograder/requirements.txt`, `release/autograder/data/`, `release/autograder/img/`, `release/autograder/otter_config.json`.
+- `release/autograder/*-autograder_*.zip`: upload this zip to Gradescope.
 
 ## Typical Workflow
 
@@ -23,7 +23,7 @@ This folder is an instructor template for building a Jupyter assignment, generat
 From repo root:
 ```bash
 conda env create -f autograder_env.yaml
-conda activate autograder_env
+conda activate adsc4720
 ```
 
 ### 2) Build your assignment
@@ -36,17 +36,17 @@ Edit these files in this folder:
 ### 3) Generate student + autograder artifacts
 From repo root:
 ```bash
-otter assign sample-jupyter/template.ipynb sample-jupyter
+conda run -n adsc4720 otter assign sample-jupyter/template.ipynb sample-jupyter/release
 ```
 
 ### 4) Validate generated outputs
-1. Open `student/template.ipynb` and confirm solutions are removed.
+1. Open `release/student/template.ipynb` and confirm solutions are removed.
 2. Run visible tests in the student version to confirm expected behavior.
-3. Confirm an autograder zip exists in `autograder/`.
+3. Confirm an autograder zip exists in `release/autograder/`.
 
 ### 5) Distribute and upload
-1. Give students the contents of `student/`.
-2. Upload the newest `autograder/*-autograder_*.zip` file to Gradescope.
+1. Give students the contents of `release/student/`.
+2. Upload the newest `release/autograder/*-autograder_*.zip` file to Gradescope.
 
 ## Notes
 - If multiple autograder zip files exist, upload the newest timestamped zip.
